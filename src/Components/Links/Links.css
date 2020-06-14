@@ -1,0 +1,59 @@
+.links {
+  background-color: #fff;
+  min-width: 70%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  min-height: 70px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5px;
+}
+
+.links .left {
+  color: #3b3054;
+}
+
+.links .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2acfcf;
+}
+
+.links .right p {
+  margin: 5px;
+}
+
+.links .right button {
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  background-color: #2acfcf;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.links .right button:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=Links.css.map */

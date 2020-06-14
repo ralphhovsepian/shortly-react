@@ -1,0 +1,232 @@
+::-webkit-input-placeholder {
+  color: #35323e;
+  padding: 0 10px;
+}
+
+:-ms-input-placeholder {
+  color: #35323e;
+  padding: 0 10px;
+}
+
+::-ms-input-placeholder {
+  color: #35323e;
+  padding: 0 10px;
+}
+
+::placeholder {
+  color: #35323e;
+  padding: 0 10px;
+}
+
+.detailPart {
+  width: 100%;
+  min-height: 600px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.shorten-form {
+  background-color: #3b3054;
+  min-width: 70%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  min-height: 100px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.shorten-form input {
+  border-radius: 5px;
+  border: 0;
+  width: 70%;
+  height: 40px;
+}
+
+.shorten-form button {
+  background-color: #2acfcf;
+  color: #fff;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.shorten-form button:hover {
+  opacity: 0.5;
+}
+
+.detail {
+  width: 40%;
+  margin: 10% auto;
+}
+
+.detail h1 {
+  color: #3b3054;
+}
+
+.detail p {
+  color: #35323e;
+}
+
+.statinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10% 0;
+}
+
+.statinfo .statone,
+.statinfo .stattwo,
+.statinfo .statthree {
+  color: #3b3054;
+  margin: 10px;
+  width: 300px;
+  min-height: 200px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.statinfo .statone h4,
+.statinfo .statone p,
+.statinfo .stattwo h4,
+.statinfo .stattwo p,
+.statinfo .statthree h4,
+.statinfo .statthree p {
+  margin: 12% 10%;
+}
+
+.statinfo .statone p,
+.statinfo .stattwo p,
+.statinfo .statthree p {
+  font-size: 12px;
+  color: #35323e;
+}
+
+.statinfo .statone img,
+.statinfo .stattwo img,
+.statinfo .statthree img {
+  display: block;
+  margin: 0 auto;
+  background-color: #3b3054;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.statinfo .line {
+  width: 50%;
+  border: 4px solid #2acfcf;
+  position: absolute;
+  margin: 100px auto;
+  z-index: 1;
+}
+
+.getstarted {
+  width: 100%;
+  min-height: 100px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  background: url("../styles/boost-desktop.svg");
+  background-size: 1900px;
+  background-color: #3b3054;
+  text-align: center;
+  padding: 10% 0;
+  color: #fff;
+}
+
+.getstarted button {
+  background-color: #2acfcf;
+  border-radius: 50px;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.getstarted button:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 960px) {
+  .statinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .statinfo .statone,
+  .statinfo .stattwo,
+  .statinfo .statthree {
+    color: #3b3054;
+    margin: 10px auto;
+    width: 300px;
+    min-height: 200px;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .linetwo {
+    border-left: 6px solid #2acfcf;
+    height: 500px;
+    position: absolute;
+    margin: 0 50%;
+    z-index: 1;
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .shorten-form button {
+    padding: 6px;
+  }
+}
+/*# sourceMappingURL=Detail.css.map */

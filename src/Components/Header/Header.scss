@@ -1,0 +1,54 @@
+$cyan: hsl(180, 66%, 49%);
+$darkviolet: hsl(257, 27%, 26%);
+$grey: hsl(0, 0%, 75%);
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5% 15%;
+  p {
+    color: $grey;
+  }
+  h1 {
+    color: $darkviolet;
+  }
+  .header-left {
+    width: 40%;
+    button {
+      margin: 10px 0;
+      color: #fff;
+      background-color: $cyan;
+      border-radius: 50px;
+      border: 0;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.5;
+    }
+  }
+  .header-right {
+    width: 60%;
+    img {
+      width: 350px;
+      height: 320px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10%;
+  }
+  .header-left {
+    margin-right: 5%;
+  }
+}

@@ -1,0 +1,37 @@
+$cyan: hsl(180, 66%, 49%);
+$darkviolet: hsl(257, 27%, 26%);
+$grey: hsl(0, 0%, 75%);
+$greyviolet: hsl(257, 7%, 63%);
+$darkblue: hsl(255, 11%, 22%);
+footer {
+  width: 100%;
+  min-height: 250px;
+  max-height: max-content;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  div {
+    margin: 40px;
+  }
+  img {
+    filter: brightness(0) invert(1);
+  }
+  b {
+    color: #fff;
+  }
+  p {
+    color: $grey;
+    cursor: pointer;
+  }
+  p:hover {
+    color: $cyan;
+  }
+  .social-media {
+    img {
+      cursor: pointer;
+      margin: 10px;
+    }
+  }
+}

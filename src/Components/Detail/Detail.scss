@@ -1,0 +1,170 @@
+$cyan: hsl(180, 66%, 49%);
+$darkviolet: hsl(257, 27%, 26%);
+$grey: hsl(0, 0%, 75%);
+$greyviolet: hsl(257, 7%, 63%);
+$darkblue: hsl(255, 11%, 22%);
+
+::placeholder {
+  color: $darkblue;
+  padding: 0 10px;
+}
+
+.detailPart {
+  width: 100%;
+  min-height: 600px;
+  max-height: max-content;
+  background-color: hsl(0, 0%, 94%);
+  overflow: hidden;
+}
+
+.shorten-form {
+  background-color: $darkviolet;
+  min-width: 70%;
+  max-width: max-content;
+  min-height: 100px;
+  max-height: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  input {
+    border-radius: 5px;
+    border: 0;
+    width: 70%;
+    height: 40px;
+  }
+  button {
+    background-color: $cyan;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.5;
+  }
+}
+
+.detail {
+  width: 40%;
+  margin: 10% auto;
+
+  h1 {
+    color: $darkviolet;
+  }
+  p {
+    color: $darkblue;
+  }
+}
+
+.statinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10% 0;
+
+  .statone,
+  .stattwo,
+  .statthree {
+    color: $darkviolet;
+    margin: 10px;
+    width: 300px;
+    min-height: 200px;
+    max-height: max-content;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 2;
+    h4,
+    p {
+      margin: 12% 10%;
+    }
+    p {
+      font-size: 12px;
+      color: $darkblue;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      background-color: $darkviolet;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+  .line {
+    width: 50%;
+    border: 4px solid $cyan;
+    position: absolute;
+    margin: 100px auto;
+    z-index: 1;
+  }
+}
+
+.getstarted {
+  width: 100%;
+  min-height: 100px;
+  max-height: max-content;
+  background: url('../styles/boost-desktop.svg');
+  background-size: 1900px;
+  background-color: $darkviolet;
+  text-align: center;
+  padding: 10% 0;
+  color: #fff;
+  button {
+    background-color: $cyan;
+    border-radius: 50px;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  button:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .statinfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    .statone,
+    .stattwo,
+    .statthree {
+      color: $darkviolet;
+      margin: 10px auto;
+      width: 300px;
+      min-height: 200px;
+      max-height: max-content;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 2;
+    }
+  }
+  .linetwo {
+    border-left: 6px solid $cyan;
+    height: 500px;
+    position: absolute;
+    margin: 0 50%;
+    z-index: 1;
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .shorten-form {
+    button {
+      padding: 6px;
+    }
+  }
+}

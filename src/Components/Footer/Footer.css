@@ -1,0 +1,48 @@
+footer {
+  width: 100%;
+  min-height: 250px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  background-color: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer div {
+  margin: 40px;
+}
+
+footer img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+footer b {
+  color: #fff;
+}
+
+footer p {
+  color: #bfbfbf;
+  cursor: pointer;
+}
+
+footer p:hover {
+  color: #2acfcf;
+}
+
+footer .social-media img {
+  cursor: pointer;
+  margin: 10px;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+$cyan: hsl(180, 66%, 49%);
+$darkviolet: hsl(257, 27%, 26%);
+$grey: hsl(0, 0%, 75%);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  li:hover {
+    color: $darkviolet;
+  }
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    .signup {
+      background-color: $cyan;
+      color: #fff;
+      border-radius: 55px;
+    }
+    .signup:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.mobileNav {
+  display: none;
+}
+
+.navItems {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: $darkviolet;
+  color: #fff;
+  margin: 0 auto;
+  display: none;
+  li {
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+  }
+  li:hover {
+    color: $grey;
+  }
+
+  .line {
+    width: 90%;
+    border-bottom: 2px solid $grey;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  .signup {
+    background-color: $cyan;
+    color: #fff;
+    border-radius: 55px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  nav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
+}

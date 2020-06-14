@@ -1,0 +1,42 @@
+$cyan: hsl(180, 66%, 49%);
+$darkviolet: hsl(257, 27%, 26%);
+$grey: hsl(0, 0%, 75%);
+$greyviolet: hsl(257, 7%, 63%);
+$darkblue: hsl(255, 11%, 22%);
+
+.links {
+  background-color: #fff;
+  min-width: 70%;
+  max-width: max-content;
+  min-height: 70px;
+  max-height: max-content;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  .left {
+    color: $darkviolet;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    color: $cyan;
+    p {
+      margin: 5px;
+    }
+    button {
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      background-color: $cyan;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.5;
+    }
+  }
+}
